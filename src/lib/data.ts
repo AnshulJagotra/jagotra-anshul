@@ -88,7 +88,7 @@ export const projects = [
     skills: ['Python', 'TensorFlow', 'Keras', 'Deep Learning (CNN)'],
     impact: 'Achieved 92% test accuracy, highlighting AI’s potential in accessible and early healthcare diagnostics.',
     category: 'ML',
-    repoUrl: 'https://github.com/Anshul-Jagotra',
+    repoUrl: 'https://github.com/AnshulJagotra/Deep--Learning-Based-Pneumonia-Detection-using-Chest-X-Rays',
   },
   {
     title: '🎬 Sentiment Analysis of Movie Reviews',
