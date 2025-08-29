@@ -97,7 +97,7 @@ export const projects = [
     skills: ['Python', 'TensorFlow', 'Keras', 'NLP', 'Sentiment Analysis'],
     impact: 'Achieved 88% accuracy, demonstrating applications in customer feedback analysis and recommendation engines.',
     category: 'ML',
-    repoUrl: 'https://github.com/Anshul-Jagotra',
+    repoUrl: 'https://github.com/AnshulJagotra/Sentiment-Analysis-of-Movie-Review',
   }
 ];
 
