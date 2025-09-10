@@ -4,15 +4,12 @@ import { projects } from '@/lib/data';
 import { ProjectCard } from '@/components/project-card';
 import { Button } from '@/components/ui/button';
 
-const allCategories = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
+const categories = [...Array.from(new Set(projects.map(p => p.category)))];
 
 export function Projects() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   const filteredProjects = useMemo(() => {
-    if (activeCategory === 'All') {
-      return projects;
-    }
     return projects.filter(project => project.category === activeCategory);
   }, [activeCategory]);
 
@@ -27,7 +24,7 @@ export function Projects() {
         </div>
 
         <div className="flex justify-center flex-wrap gap-2 mb-12">
-          {allCategories.map(category => (
+          {categories.map(category => (
             <Button
               key={category}
               variant={activeCategory === category ? 'default' : 'ghost'}
