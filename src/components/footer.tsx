@@ -5,7 +5,7 @@ import { personalInfo } from '@/lib/data';
 
 export function Footer() {
   return (
-    <footer className="w-full bg-background border-t">
+    <footer className="w-full bg-background/80 border-t backdrop-blur-lg">
       <div className="container mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <p className="text-sm text-muted-foreground">

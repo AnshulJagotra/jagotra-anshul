@@ -18,7 +18,7 @@ const iconMap: { [key: string]: React.ElementType } = {
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 sm:py-32 bg-background">
+    <section id="skills" className="py-24 sm:py-32 bg-background/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Technical Skills</h2>
@@ -30,7 +30,7 @@ export function Skills() {
           {Object.entries(skills).map(([category, skillList]) => {
             const Icon = iconMap[category] || Code;
             return (
-              <Card key={category} className="bg-card/50 border hover:border-primary/50 transition-colors duration-300">
+              <Card key={category} className="bg-card/60 border hover:border-primary/50 transition-colors duration-300 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
                     <Icon className="h-6 w-6 text-primary" />

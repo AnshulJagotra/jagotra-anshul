@@ -15,7 +15,7 @@ export function Contact() {
   const mailtoHref = `mailto:${personalInfo.email}?subject=${encodeURIComponent(`Message from ${name} via Portfolio`)}&body=${encodeURIComponent(message + `\n\nFrom: ${name}\nEmail: ${email}`)}`;
 
   return (
-    <section id="contact" className="py-24 sm:py-32">
+    <section id="contact" className="py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Get in Touch</h2>
@@ -24,7 +24,7 @@ export function Contact() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-card/50 p-8 rounded-lg border">
+          <div className="bg-card/60 p-8 rounded-lg border backdrop-blur-sm">
             <h3 className="text-2xl font-semibold mb-6">Contact Form</h3>
             <div className="space-y-6">
               <div>

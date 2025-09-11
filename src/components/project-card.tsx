@@ -23,7 +23,7 @@ export function ProjectCard({
   repoUrl,
 }: ProjectCardProps) {
   return (
-    <div className="group relative flex h-full flex-col overflow-hidden rounded-lg border bg-card/60 p-6 shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
+    <div className="group relative flex h-full flex-col overflow-hidden rounded-lg border bg-card/60 p-6 shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 backdrop-blur-sm">
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-accent/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
       <div className="relative z-10 flex flex-grow flex-col">
         <h3 className="text-xl font-bold text-primary mb-4">{title}</h3>

@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import { ThemeToggle } from './theme-toggle';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
@@ -39,7 +38,7 @@ export function Header() {
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
           ? 'border-b border-border/40 bg-background/80 backdrop-blur-lg'
-          : 'bg-background/0'
+          : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -54,7 +53,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
@@ -63,7 +61,7 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[240px]">
+              <SheetContent side="right" className="w-[240px] bg-background/90 backdrop-blur-lg">
                 <div className="flex flex-col p-6 pt-12">
                 <Link href="/" className="flex items-center mb-8" onClick={() => setSheetOpen(false)}>
                     <h1 className="text-xl font-bold text-primary">Anshul Jagotra</h1>

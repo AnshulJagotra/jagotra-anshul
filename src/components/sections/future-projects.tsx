@@ -5,7 +5,7 @@ import { Lightbulb, Rocket, CheckCircle } from 'lucide-react';
 
 export function FutureProjects() {
   return (
-    <section id="future-projects" className="py-24 sm:py-32 bg-secondary/50">
+    <section id="future-projects" className="py-24 sm:py-32 bg-background/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -17,7 +17,7 @@ export function FutureProjects() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {futureProjects.map((project, index) => (
-            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col group overflow-hidden">
+            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col group overflow-hidden backdrop-blur-sm">
                 <CardHeader>
                     <div className="flex items-start gap-4">
                         <span className="text-4xl mt-1 opacity-80 group-hover:text-primary transition-colors">{project.icon}</span>

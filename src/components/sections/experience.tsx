@@ -49,7 +49,7 @@ export function Experience() {
         </div>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 overflow-hidden">
+            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 overflow-hidden backdrop-blur-sm">
                 <CardHeader>
                     <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <CardTitle className="text-xl font-bold text-foreground flex items-center gap-3">

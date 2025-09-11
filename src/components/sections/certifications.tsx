@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-24 sm:py-32 bg-background">
+    <section id="certifications" className="py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -19,7 +19,7 @@ export function Certifications() {
         </div>
         <div className="max-w-3xl mx-auto space-y-8">
           {certifications.map((cert, index) => (
-            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden hover:shadow-lg hover:shadow-primary/10">
+            <Card key={index} className="bg-card/70 border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden hover:shadow-lg hover:shadow-primary/10 backdrop-blur-sm">
                <div className="p-6">
                   <CardHeader className="p-0 mb-4">
                     <CardTitle className="text-xl font-bold text-foreground flex items-start gap-3">
