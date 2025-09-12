@@ -53,7 +53,7 @@ export function Experience() {
         if (!api) {
         return
         }
-        const engine = api.internalEngine(api.rootNode());
+        const engine = api.internalEngine();
         const slides = api.slideNodes();
 
         slides.forEach((slide, index) => {
