@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -53,6 +54,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+            <ThemeToggle />
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>

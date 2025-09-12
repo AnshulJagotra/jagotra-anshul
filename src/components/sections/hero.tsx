@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
                     <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent bg-[200%_auto] animate-gradient">
@@ -29,8 +29,8 @@ export function Hero() {
                 </Button>
                 </div>
             </div>
-            <div className="hidden md:flex justify-center items-center h-full relative">
-                <div className="relative w-96 h-96 lg:w-[26rem] lg:h-[26rem]">
+            <div className="flex justify-center items-center h-full relative">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[26rem] lg:h-[26rem] animate-float">
                     <figure className="relative w-full h-full rounded-full overflow-hidden shadow-2xl shadow-primary/20 z-10">
                         <Image
                             src="/anshul.png"
