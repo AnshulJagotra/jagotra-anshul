@@ -23,12 +23,12 @@ export function Certifications() {
     if (!api) {
       return
     }
-    const engine = api.internalEngine();
+    const engine = api.internalEngine(api.rootNode());
     const slides = api.slideNodes();
 
     slides.forEach((slide, index) => {
       slide.classList.remove('is-active', 'is-prev', 'is-next');
-      if (engine.scrollProgress.get() < 0) {
+      if (engine.scrollProgress.get(engine.index.get()) < 0) {
         if (index === engine.index.get() && current !== 0) {
             slide.classList.add('is-active');
         }
